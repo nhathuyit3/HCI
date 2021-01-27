@@ -10,10 +10,10 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:background="@color/gray">
-        <RelativeLayout
+        <LinearLayout
             android:id="@+id/toolbarInfoSupport"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:background="@drawable/bg_nav"
             android:layout_alignParentTop="true"
             android:orientation="horizontal"
@@ -22,13 +22,21 @@
             android:weightSum="10">
             <ImageView
                 android:id="@+id/imgBackToHome"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"/>
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_arrow_back"
-                android:layout_centerVertical="true"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="20dp"/>
-        </RelativeLayout>
+                android:text="Điều khoản sữ dụng"
+                android:layout_gravity="center"
+                android:textColor="@color/black"
+                android:textSize="19dp"
+                android:textStyle="bold"
+                android:layout_marginLeft="50dp"/>
+        </LinearLayout>
         <ScrollView
             android:layout_width="wrap_content"
             android:layout_height="match_parent">

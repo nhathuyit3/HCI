@@ -19,6 +19,7 @@ import com.example.moonlightapplication.moonlight.CartsActivity;
 import com.example.moonlightapplication.moonlight.DetailNew1Activity;
 import com.example.moonlightapplication.moonlight.DetailNewActivity;
 import com.example.moonlightapplication.moonlight.MemberInformationActivity;
+import com.example.moonlightapplication.moonlight.MyCoupleActivity;
 import com.example.moonlightapplication.moonlight.NotifyActivity;
 
 /**
@@ -34,7 +35,7 @@ public class HomeFragment extends Fragment {
     private static final String ARG_PARAM2 = "param2";
 
     private Button btnDetail1, btnDetail2;
-    private ImageView imgCart, imgNotify, imgpoint, imgpoints;
+    private ImageView imgCart, imgNotify, imgpoint, imgpoints, imgcoupon;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -122,6 +123,14 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(getActivity(), MemberInformationActivity.class);
+                startActivity(intent);
+            }
+        });
+        imgcoupon = (ImageView)rootView.findViewById(R.id.imgCoupon);
+        imgcoupon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(getActivity(), MyCoupleActivity.class);
                 startActivity(intent);
             }
         });

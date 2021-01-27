@@ -16,7 +16,7 @@
         <LinearLayout
             android:id="@+id/toolbarInforUser"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:layout_alignParentTop="true"
             android:background="@drawable/bg_nav"
             android:orientation="horizontal"
@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
-                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
                 android:text="Thông tin người dùng"
                 android:textColor="@color/black"
                 android:textSize="20dp" />

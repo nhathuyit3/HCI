@@ -17,7 +17,7 @@
         <LinearLayout
             android:id="@+id/toolbarInforUser"
             android:layout_width="match_parent"
-            android:layout_height="60dp"
+            android:layout_height="50dp"
             android:background="@drawable/bg_nav"
             android:orientation="horizontal"
             android:paddingTop="5dp"
@@ -27,14 +27,13 @@
                 android:id="@+id/imgBackToMenu"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
+                android:layout_gravity="center"
                 android:src="@drawable/ic_baseline_clear"
                 android:layout_marginLeft="10dp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_centerInParent="true"
-                android:layout_marginTop="10dp"
+                android:layout_gravity="center"
                 android:text="Cài đặt"
                 android:textColor="@color/black"
                 android:textSize="20dp"
@@ -42,7 +41,7 @@
         </LinearLayout>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:background="@drawable/bg_nav"
             android:layout_marginTop="30dp">
             <LinearLayout
@@ -73,7 +72,7 @@
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:background="@drawable/bg_nav"
             android:layout_marginTop="10dp">
             <LinearLayout
@@ -106,7 +105,7 @@
         </RelativeLayout>
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             android:background="@drawable/bg_nav"
             android:layout_marginTop="10dp">
             <LinearLayout
