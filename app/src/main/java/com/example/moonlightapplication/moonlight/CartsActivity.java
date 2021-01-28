@@ -3,6 +3,7 @@ package com.example.moonlightapplication.moonlight;
 import android.app.ActionBar;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.AttributeSet;
 import android.view.Gravity;
@@ -17,11 +18,19 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.moonlightapplication.R;
 
 public class CartsActivity extends AppCompatActivity {
-    private ImageView imgCouple;
+    private ImageView imgCouple, imgbacktohome;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_carts);
+        imgbacktohome = (ImageView)findViewById(R.id.imgBacktohome);
+        imgbacktohome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(CartsActivity.this, HomeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 //    @Nullable

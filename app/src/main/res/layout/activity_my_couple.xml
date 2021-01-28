@@ -15,16 +15,16 @@
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:background="@drawable/bg_nav"
-            android:layout_alignParentTop="true"
+            android:layout_gravity="center"
             android:orientation="horizontal"
             android:paddingTop="5dp"
             android:paddingBottom="5dp"
             android:weightSum="10">
             <ImageView
-                android:id="@+id/imgBackToHome"
+                android:id="@+id/imgbackmenu"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
-                android:src="@drawable/ic_arrow_back"
+                android:src="@drawable/ic_baseline_clear"
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"/>
             <TextView
@@ -44,7 +44,8 @@
             android:background="@drawable/bg_couple"
             android:layout_marginLeft="40dp"
             android:layout_marginRight="40dp"
-            android:layout_marginTop="20dp">
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -68,6 +69,78 @@
             <TextView
                 android:layout_width="10sp"
                 android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_couple"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/coupon1"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ưu đãi 25% khi đặt PickUp(tự đến lấy) từ 02/11/..."
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hạn sữ dụng đến 30/12/2021"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/bg_couple"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center">
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/coupon2"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ưu đãi giảm 30.000đ cho đơn hàng từ 149.000đ..."
+                    android:layout_gravity="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="15dp"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Hạn sữ dụng đến 30/12/2021"/>
+            </LinearLayout>
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
