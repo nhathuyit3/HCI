@@ -12,8 +12,7 @@
         android:layout_alignParentTop="true"
         android:paddingTop="5dp"
         android:paddingBottom="5dp"
-        android:weightSum="10"
-        android:background="@color/gray_admin">
+        android:weightSum="10">
         <LinearLayout
             android:id="@+id/toolbarInforUser"
             android:layout_width="match_parent"
@@ -25,10 +24,11 @@
             android:paddingBottom="5dp"
             android:weightSum="10">
             <ImageView
-                android:id="@+id/imgBackToMenu"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/imageforward"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
                 android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
                 android:src="@drawable/ic_baseline_clear" />
             <TextView
                 android:layout_width="wrap_content"

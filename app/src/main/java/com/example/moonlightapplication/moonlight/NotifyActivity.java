@@ -20,8 +20,7 @@ public class NotifyActivity extends AppCompatActivity {
         imgForward.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(NotifyActivity.this, HomeActivity.class);
-                startActivity(intent);
+                finish();
             }
         });
     }

@@ -29,6 +29,7 @@ public class CartsActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(CartsActivity.this, HomeActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
             }
         });
     }

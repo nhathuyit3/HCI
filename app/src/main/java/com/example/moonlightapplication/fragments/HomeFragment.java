@@ -7,7 +7,6 @@ import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -22,13 +21,14 @@ import com.example.moonlightapplication.moonlight.DetailNewActivity;
 import com.example.moonlightapplication.moonlight.MemberInformationActivity;
 import com.example.moonlightapplication.moonlight.MyCoupleActivity;
 import com.example.moonlightapplication.moonlight.NotifyActivity;
+import com.example.moonlightapplication.moonlight.PreferentialStoresActivity;
 
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link HomeFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class HomeFragment extends Fragment {
+public class HomeFragment extends Fragment{
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -37,6 +37,7 @@ public class HomeFragment extends Fragment {
 
     private Button btnDetail1, btnDetail2;
     private ImageView imgCart, imgNotify, imgpoint, imgpoints, imgcoupon;
+    private Fragment fragment = null;
 
     // TODO: Rename and change types of parameters
     private String mParam1;
@@ -123,8 +124,8 @@ public class HomeFragment extends Fragment {
         imgpoints.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(getActivity(), MemberInformationActivity.class);
-                startActivity(intent);
+               Intent intent = new Intent(getActivity(), PreferentialStoresActivity.class);
+               startActivity(intent);
             }
         });
         imgcoupon = (ImageView)rootView.findViewById(R.id.imgCoupon);

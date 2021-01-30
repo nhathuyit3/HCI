@@ -11,7 +11,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".moonlight.MyCoupleActivity"></activity>
+        <activity android:name=".moonlight.PreferentialStoresActivity"></activity>
+        <activity android:name=".moonlight.MyCoupleActivity" />
         <activity android:name=".moonlight.NotifyActivity" />
         <activity android:name=".moonlight.DetailNew1Activity" />
         <activity android:name=".moonlight.DetailNewActivity" />

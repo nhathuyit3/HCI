@@ -1,6 +1,5 @@
 package com.example.moonlightapplication.moonlight;
 
-import android.content.Intent;
 import android.graphics.PorterDuff;
 import android.net.Uri;
 import android.os.Bundle;
@@ -104,6 +103,12 @@ public class HomeActivity extends AppCompatActivity implements HomeFragment.OnFr
         // replace the FrameLayout with new Fragment
         ft.replace(R.id.fragment_container, fragment);
         ft.commit(); // save the changes
+    }
+
+    @Override
+    public void finish() {
+        super.finish();
+        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
     @Override
